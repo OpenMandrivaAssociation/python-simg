@@ -6,6 +6,7 @@ License:        MIT
 Group:          Development/Python
 URL:            https://github.com/dlenski/PySIMG
 Source0:        https://github.com/dlenski/PySIMG/archive/refs/heads/master.tar.gz#/%{name}-%{version}.tar.gz
+Patch0:		pysimg-no-prehistoric-python.patch
 BuildArch:      noarch
 BuildRequires:  python-devel
 BuildRequires:  python-flit-core

@@ -1,0 +1,22 @@
+diff -up PySIMG-master/requirements.txt.omv~ PySIMG-master/requirements.txt
+--- PySIMG-master/requirements.txt.omv~	2022-10-31 23:15:31.373989927 +0100
++++ PySIMG-master/requirements.txt	2022-10-31 23:15:34.112013688 +0100
+@@ -1 +0,0 @@
+-enum34>=1.0
+diff -up PySIMG-master/setup.py.omv~ PySIMG-master/setup.py
+--- PySIMG-master/setup.py.omv~	2022-10-31 23:14:41.275555722 +0100
++++ PySIMG-master/setup.py	2022-10-31 23:15:29.561974204 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python2
++#!/usr/bin/python
+ 
+ from __future__ import print_function
+ import sys, os, re, subprocess as sp
+@@ -36,7 +36,6 @@ setup(name="pysimg",
+       long_description=open('README.md').read(),
+       author="Daniel Lenski",
+       author_email="dlenski@gmail.com",
+-      install_requires=[ 'enum34>=1.0' ],
+       license='GPL v3 or later',
+       url="https://github.com/dlenski/PySIMG",
+       packages=["pysimg"],
