@@ -1,6 +1,6 @@
 Name:           python-simg
 Version:        2018.12.18
-Release:        1
+Release:        2
 Summary:        Python library and tools for handling Android fastboot's sparse image format
 License:        MIT
 Group:          Development/Python
