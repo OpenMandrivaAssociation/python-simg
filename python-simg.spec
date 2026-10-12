@@ -30,5 +30,5 @@ mv %{buildroot}%{_bindir}/img2simg %{buildroot}%{_bindir}/img2simg.py
 
 %files
 %{_bindir}/*
-%{py_puresitedir}/pysimg-*.dist-info
+%{py_puresitedir}/pysimg-*.egg-info
 %{py_puresitedir}/pysimg
