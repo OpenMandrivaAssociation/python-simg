@@ -8,9 +8,10 @@ URL:            https://github.com/dlenski/PySIMG
 Source0:        https://github.com/dlenski/PySIMG/archive/refs/heads/master.tar.gz#/%{name}-%{version}.tar.gz
 Patch0:		pysimg-no-prehistoric-python.patch
 BuildArch:      noarch
-BuildRequires:  python-devel
-BuildRequires:  python-flit-core
-BuildRequires:  python-pip
+BuildRequires:	pkgconfig(python)
+BuildRequires:	python%{pyver}dist(flit-core)
+BuildRequires:	python%{pyver}dist(pip)
+BuildRequires:	python%{pyver}dist(setuptools)
 
 %description
 Python library and tools for handling Android fastboot's sparse image format
@@ -29,5 +30,5 @@ mv %{buildroot}%{_bindir}/img2simg %{buildroot}%{_bindir}/img2simg.py
 
 %files
 %{_bindir}/*
-%{py_puresitedir}/pysimg-*.egg-info
+%{py_puresitedir}/pysimg-*.dist-info
 %{py_puresitedir}/pysimg
